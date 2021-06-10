@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
           uri.toString().indexOf("code") + 5, uri.toString().indexOf("&state"));
 
       Map<String, String> bodyj = {
-        "client_id": "90f6a3b181f6470fabee849b969354f6",
+        "client_id": "",
         "grant_type": "authorization_code",
         "code": str,
         "redirect_uri": Uri.parse("apical://spt").toString(),
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
     String pt = "apical://spt";
     print(Uri.parse(pt));
     String url =
-        "https://accounts.spotify.com/authorize?response_type=code&client_id=90f6a3b181f6470fabee849b969354f6&redirect_uri=${Uri.parse(pt)}&state=e21392da45dbf4&scope=user-follow-modify&state=e21392da45dbf4&code_challenge=$ch&code_challenge_method=S256";
+        "https://accounts.spotify.com/authorize?response_type=code&client_id=&redirect_uri=${Uri.parse(pt)}&state=e21392da45dbf4&scope=user-follow-modify&state=e21392da45dbf4&code_challenge=$ch&code_challenge_method=S256";
     print(url);
     await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
     //Response res = await get(url);
