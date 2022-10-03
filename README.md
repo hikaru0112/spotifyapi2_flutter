@@ -1,6 +1,6 @@
 # api_flutter
 
-A new Flutter application.
+Spotifyの音楽一覧を取得するアプリケーション
 
 ## Getting Started
 
